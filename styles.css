@@ -1,0 +1,508 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Basic Layout */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #e0e0e0; /* Light text color */
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #333;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+}
+header h1 {
+    font-size: 3em;
+    color: #ffffff; /* White text */
+}
+
+header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    color: #b0b0b0; /* Light gray text */
+}
+
+.animate__animated{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: orange;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: orange;
+}
+
+
+
+/* Sections */
+.quotes-section {
+    padding-top: 200px;
+    padding-bottom:200px ;
+    margin:20px;
+    background-color: #333; 
+    border-radius: 8px;
+    background-image: url("background.webp");
+}
+.about_painting-section{
+    padding-top: 30px;
+    padding-bottom:30px ;
+    padding-left:20px ;
+    padding-right:20px ;
+    margin:20px;
+    border-radius: 8px;
+    background-image: url("background.webp");
+}
+.about_painting-section h2{
+    color: orange;
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.about_painting-section p{
+    color: rgb(1, 2, 49);
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-weight: bolder;
+    
+}
+.gallery-section{
+    margin:20px;
+    background-color: peachpuff; 
+    border-radius: 8px;
+    padding-left:20px ;
+    padding-right:20px ;
+    padding-top: 20px;
+    padding-bottom:20px ;
+}
+.gallery-section h2{
+    color: #444;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: 50px;
+    text-align: center;
+    background-color: antiquewhite;
+}
+
+
+.upper-section{
+    margin-top: 100px;
+    background-image: url("background.webp");
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    border-radius: 8px;
+    margin-right: 20px;
+
+}
+
+.upper-section h1{
+    color:orange;
+    font-size: 6ch;
+    font-weight: bolder;
+    margin-top: 40px;
+    text-align:center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.upper-section p{
+    color:rgb(1, 2, 49);
+    font-size: 2.5ch;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;  
+}
+.logocover{
+    height: 500px;
+    width: 500px;
+    text-align: center;
+   margin-left: 500px;
+}
+
+section h2 {
+    color: #ffffff; /* White text for headings */
+    font-size: 2.5em;
+}
+
+section p {
+    font-size: 1.1em;
+    margin-top: 10px;
+    color: #cccccc; /* Lighter gray text */
+}
+
+/* Gallery Section */
+.gallery1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between gallery items */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-right: 50px;
+   
+}
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  
+}
+.contact{
+    background-color: #444;
+    margin-top: 150px;
+    margin-left: 20px;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.contact p{
+    color: orange;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: cursive;
+    font-size: 20px;
+    
+}
+.contact h2{
+    color: orange;
+    font-family: cursive;
+    font-size: 100px;
+    padding-top: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.gallery h3 {
+    color: black; 
+}
+.gallery p {
+    color: black; 
+}
+.gallery-landscape {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 150px;
+  
+}.gallery-about {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  
+}
+.gallery-about p {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    color: black;
+  
+}
+.gallery-about h3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    color: black;
+  
+}
+.gallery-landscape h3 {
+    color: black; 
+}
+.gallery-landscape p {
+    color: black; 
+}
+
+
+.gallery2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between gallery items */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 150px;
+    margin-right: 50px;
+
+}
+.gallery3 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Add space between gallery items */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 250px;
+    margin-right: 50px;
+    
+}
+
+.painting {
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    color: white;
+    background-color: #444; /* Darker background for paintings */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease;
+    display: flex; /* Enable flexbox layout inside the painting container */
+    flex-direction: column; /* Stack the content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.painting img {
+    width: 100%; /* Make sure the image fills the width of its container */
+    height: auto; /* Keep the aspect ratio intact */
+    border-radius: 8px; /* Rounded corners for the image */
+    object-fit: cover; /* Make the image cover the container while maintaining its aspect ratio */
+    margin-bottom: 15px; /* Add space between the image and the text */
+}
+
+.painting h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.painting p {
+    font-size: 1.1em;
+}
+
+/* Hover effect on paintings */
+.painting:hover {
+    transform: translateY(-10px); /* Slightly lift the painting on hover */
+}
+
+
+/* Hover effect on paintings */
+.painting:hover {
+    transform: translateY(-10px); /* Slightly lift painting on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1f1f1f;
+    color: #b0b0b0;
+    border-top: 2px solid #333;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .painting {
+        width: 80%;
+    }
+}
+
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1f1f1f;
+    color: #b0b0b0;
+    border-top: 2px solid #333;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+
+
+/* Inspirational Quotes Section */
+#quotes {
+    background-color: peachpuff; /* Slightly transparent background */
+    padding: 40px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    font-family: cursive;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow around the section */
+}
+
+#quotes h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center; /* Center the title */
+    color: #333; /* Dark text color for better contrast */
+    
+}
+
+.quotes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
+    gap: 20px; /* Space between each quote block */
+}
+
+.quote-item {
+    background-color: peachpuff; /* White background for each quote */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for each quote */
+    text-align: center; /* Center align text within each quote */
+}
+
+.quote-item p {
+    font-size: 1.2em; /* Slightly larger font for readability */
+    font-style: italic; /* Italicize for artistic effect */
+    color: #333; /* Dark text color for better readability */
+}
+.upper-about{
+   
+    background-color: peachpuff;
+    margin: 20px;
+    margin-top: 150px;
+    border-radius: 8px;
+}
+.upper-about h3{
+    color: orange;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-style:initial;
+    font-size: 30px;
+    padding: 20px;
+}
+.upper2-about{
+   
+    background-color: peachpuff;
+    margin: 20px;
+    border-radius: 8px;
+    margin-left:150px;
+    margin-right:150px ;
+    background-image: url("background.webp");
+}
+.upper2-about h3{
+    color: orange;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-style:initial;
+    font-size: 30px;
+}
+.upper-about p{
+    color: rgb(1, 2, 49);
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-style:initial;
+    font-size: 20px;
+}
+
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.search-bar input[type="text"] {
+    width: 60%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+.social-icons {
+    margin-top: 150px;
+    margin-bottom: 150px;
+    text-align: center;
+    box-sizing: border-box;
+    border-color: #e0e0e0;
+    font-size: 30px;
+    padding-bottom: 150px;
+
+}
+.social-icons a {
+    margin:10px;
+    text-decoration: none;
+    font-size: 2.5em;
+    margin-left: 80px;
+    
+}
+.social-icons a:hover i {
+    transform: scale(1.2); /* Enlarge icon on hover */
+    transition: transform 0.3s ease;
+    color: skyblue;
+}
+
+/* Custom Colors for Each Icon */
+.gmail-icon i {
+    color: #D14836; /* Gmail red */
+}
+.facebook-icon i {
+    color: #1877F2; /* Facebook blue */
+}
+.instagram-icon i {
+    color: #C13584; /* Instagram pink/purple */
+}
+.yahoo-icon i {
+    color: #430297; /* Yahoo purple */
+}
+.whatsapp-icon i {
+    color: #25D366; /* WhatsApp green */
+}
+
